@@ -1,0 +1,15 @@
+<div class="page-header">
+	<h1>Spotify User ID: <%= @user.user_id %></h1>
+</div>
+<h2>Artists</h2>
+<ul class="list-group">
+	<% @user.artists.each do |artist| %>
+		<li class="list-group-item"><%= artist.name %></li>
+	<% end %>
+</ul>
+<h2>Genres</h2>
+<ul class="list-group">
+	<% @user.genres.each do |genres| %>
+		<li class="list-group-item"><%= genres.name %></li>
+	<% end %>
+</ul>
